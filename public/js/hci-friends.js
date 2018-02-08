@@ -5,6 +5,11 @@ $(document).ready(function() {
 	initializePage();
 })
 
+//Listeners
+$('a').click(function() {
+  $(this).text(anagrammedName($(this).text()));
+});
+
 /*
  * Function that is called when the document is ready.
  */
